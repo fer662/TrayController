@@ -1,0 +1,4 @@
+platform :ios
+
+pod "UIKitHelpers",  :git => 'https://github.com/fer662/UIKitHelpers.git'
+pod "UITableViewHelper",  :git => 'https://github.com/fer662/UITableViewHelper.git'

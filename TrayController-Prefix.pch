@@ -1,0 +1,16 @@
+//
+// Prefix header for all source files of the 'TrayController' target in the 'TrayController' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+#if !defined(CLAMP)
+#define CLAMP(A, LOW, HIGH) ({ 	\
+__typeof__(A) __a = (A);\
+__typeof__(LOW) __low = (LOW);\
+__typeof__(HIGH) __high = (HIGH);\
+__a < __low ? __low : (__a > __high ? __high : __a ); \
+})
+#endif
