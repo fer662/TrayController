@@ -32,10 +32,6 @@
 - (CGFloat)rowHeight;
 
 - (UITableViewCell*)cellForTableView:(UITableView*)tableView;
-- (void)configureCell:(UITableViewCell*)cell;
-
-- (void)configureView:(id)view forTray:(NPTray*)aTray;
-
 
 @end
 

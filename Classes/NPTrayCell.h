@@ -7,14 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-@class NPTrayItem;
+#import "TableViewCell.h"
 
-
-@interface NPTrayCell : UITableViewCell
+@interface NPTrayCell : TableViewCell
 
 @property (nonatomic, strong) IBOutlet UILabel      *textLabel;
 @property (nonatomic, strong) IBOutlet UIImageView  *imageView;
-
-- (void)configureWithItem:(NPTrayItem*)item;
 
 @end

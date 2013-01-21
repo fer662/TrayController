@@ -73,17 +73,7 @@
 
 - (CGFloat)rowHeight
 {
-    return 70;
-}
-
-- (void)configureCell:(NPTrayCell*)cell
-{
-    [cell configureWithItem:self];
-}
-
-- (void)configureView:(id)view forTray:(NPTray*)aTray
-{
-    
+    return [NPTrayCell heightForObject:self];
 }
 
 @end

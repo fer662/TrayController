@@ -97,6 +97,7 @@
     [self.tableView reloadData];
     [self.tableView selectRowAtIndexPath:self.selectedIndexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
 }
+
 - (void)reloadMainItem
 {
     Class viewClass = nil;
@@ -108,7 +109,7 @@
     UIView *newView = [[viewClass alloc] initWithFrame:self.mainItemView.bounds];
     [self.mainItemView addSubview:newView];
     
-    [self.mainItem configureView:newView forTray:self];
+    //[self.mainItem configureView:newView forTray:self];
     
     self.tableView.frameY_rga = [newView frameHeight_rga];
     self.tableView.frameHeight_rga = self.view.frameHeight_rga - self.tableView.frameY_rga;

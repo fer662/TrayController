@@ -16,11 +16,11 @@
 
 @implementation NPTrayCell
 
-@synthesize textLabel;
-@synthesize imageView;
+@synthesize object = _object;
 
-- (void)configureWithItem:(NPTrayItem*)item
+- (void)setObject:(NPTrayItem *)item;
 {
+    _object = item;
     self.textLabel.text = item.title;
     self.imageView.image = item.image;
 }
