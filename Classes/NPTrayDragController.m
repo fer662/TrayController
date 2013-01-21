@@ -28,13 +28,20 @@
 
 @end
 
+#if !defined(CLAMP)
+#define CLAMP(A, LOW, HIGH) ({ 	\
+__typeof__(A) __a = (A);\
+__typeof__(LOW) __low = (LOW);\
+__typeof__(HIGH) __high = (HIGH);\
+__a < __low ? __low : (__a > __high ? __high : __a ); \
+})
+#endif
+
 CGPoint CGPointClampToRect(const CGPoint point, const CGRect rect)
 {
     return CGPointMake(CLAMP(point.x, CGRectGetMinX(rect), CGRectGetMaxX(rect)),
                        CLAMP(point.y, CGRectGetMinY(rect), CGRectGetMaxY(rect)));
 }
-
-
 @implementation NPTrayDragController
 
 @synthesize gestureRecognizer, view=_view, targetView=_targetView;

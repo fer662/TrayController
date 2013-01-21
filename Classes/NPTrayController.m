@@ -26,6 +26,14 @@ typedef enum {
     UIViewPhaseDidUnload
 } UIViewPhase;
 
+#if !defined(CLAMP)
+#define CLAMP(A, LOW, HIGH) ({ 	\
+__typeof__(A) __a = (A);\
+__typeof__(LOW) __low = (LOW);\
+__typeof__(HIGH) __high = (HIGH);\
+__a < __low ? __low : (__a > __high ? __high : __a ); \
+})
+#endif
 
 @interface NPTrayController() <NPTrayDelegate, NPTrayDragControllerDelegate>
 {
@@ -105,7 +113,7 @@ typedef enum {
 {
     [super didReceiveMemoryWarning];
     
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0"))
+    if (NO)
     {
         BOOL isLoaded = [self isViewLoaded];
         
