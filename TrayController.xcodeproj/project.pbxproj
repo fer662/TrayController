@@ -37,19 +37,22 @@
 		E10062CD16ADCEDA00EDD9E3 /* TrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrayController.h; sourceTree = "<group>"; };
 		E10062E816ADD21C00EDD9E3 /* NPTray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPTray.h; sourceTree = "<group>"; };
 		E10062E916ADD21C00EDD9E3 /* NPTray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPTray.m; sourceTree = "<group>"; };
-		E10062EA16ADD21C00EDD9E3 /* NPTray.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPTray.xib; sourceTree = "<group>"; };
 		E10062EB16ADD21C00EDD9E3 /* NPTrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPTrayController.h; sourceTree = "<group>"; };
 		E10062EC16ADD21C00EDD9E3 /* NPTrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPTrayController.m; sourceTree = "<group>"; };
-		E10062ED16ADD21D00EDD9E3 /* NPTrayController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPTrayController.xib; sourceTree = "<group>"; };
 		E10062EE16ADD21D00EDD9E3 /* NPTrayDragController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPTrayDragController.h; sourceTree = "<group>"; };
 		E10062EF16ADD21D00EDD9E3 /* NPTrayDragController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPTrayDragController.m; sourceTree = "<group>"; };
 		E10062F016ADD21D00EDD9E3 /* UIViewController+NPTray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NPTray.h"; sourceTree = "<group>"; };
 		E10062F116ADD21E00EDD9E3 /* UIViewController+NPTray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NPTray.m"; sourceTree = "<group>"; };
 		E10062F616ADD27800EDD9E3 /* NPTrayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPTrayCell.h; sourceTree = "<group>"; };
 		E10062F716ADD27800EDD9E3 /* NPTrayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPTrayCell.m; sourceTree = "<group>"; };
-		E10062F816ADD27800EDD9E3 /* NPTrayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPTrayCell.xib; sourceTree = "<group>"; };
 		E10062FA16ADD29300EDD9E3 /* NPTrayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPTrayItem.h; sourceTree = "<group>"; };
 		E10062FB16ADD29400EDD9E3 /* NPTrayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPTrayItem.m; sourceTree = "<group>"; };
+		E100632516ADDBD700EDD9E3 /* NPTray.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPTray.xib; sourceTree = "<group>"; };
+		E100632616ADDBD700EDD9E3 /* NPTrayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPTrayCell.xib; sourceTree = "<group>"; };
+		E100632716ADDBD700EDD9E3 /* NPTrayController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NPTrayController.xib; sourceTree = "<group>"; };
+		E100632816ADDC6800EDD9E3 /* NPTrayController.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = NPTrayController.nib; sourceTree = "<group>"; };
+		E100632916ADDC6800EDD9E3 /* NPTrayCell.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = NPTrayCell.nib; sourceTree = "<group>"; };
+		E100632A16ADDC6900EDD9E3 /* NPTray.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = NPTray.nib; sourceTree = "<group>"; };
 		FAC9A2B582004F7085FE846B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,6 +99,7 @@
 		E10062BC16ADCDE900EDD9E3 /* TrayController */ = {
 			isa = PBXGroup;
 			children = (
+				E100632416ADDBD700EDD9E3 /* Resources */,
 				E10062CC16ADCEDA00EDD9E3 /* Classes */,
 				E10062BD16ADCDE900EDD9E3 /* Supporting Files */,
 			);
@@ -115,15 +119,12 @@
 			children = (
 				E10062E816ADD21C00EDD9E3 /* NPTray.h */,
 				E10062E916ADD21C00EDD9E3 /* NPTray.m */,
-				E10062EA16ADD21C00EDD9E3 /* NPTray.xib */,
 				E10062F616ADD27800EDD9E3 /* NPTrayCell.h */,
 				E10062F716ADD27800EDD9E3 /* NPTrayCell.m */,
-				E10062F816ADD27800EDD9E3 /* NPTrayCell.xib */,
 				E10062FA16ADD29300EDD9E3 /* NPTrayItem.h */,
 				E10062FB16ADD29400EDD9E3 /* NPTrayItem.m */,
 				E10062EB16ADD21C00EDD9E3 /* NPTrayController.h */,
 				E10062EC16ADD21C00EDD9E3 /* NPTrayController.m */,
-				E10062ED16ADD21D00EDD9E3 /* NPTrayController.xib */,
 				E10062EE16ADD21D00EDD9E3 /* NPTrayDragController.h */,
 				E10062EF16ADD21D00EDD9E3 /* NPTrayDragController.m */,
 				E10062F016ADD21D00EDD9E3 /* UIViewController+NPTray.h */,
@@ -131,6 +132,19 @@
 				E10062CD16ADCEDA00EDD9E3 /* TrayController.h */,
 			);
 			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		E100632416ADDBD700EDD9E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E100632816ADDC6800EDD9E3 /* NPTrayController.nib */,
+				E100632916ADDC6800EDD9E3 /* NPTrayCell.nib */,
+				E100632A16ADDC6900EDD9E3 /* NPTray.nib */,
+				E100632516ADDBD700EDD9E3 /* NPTray.xib */,
+				E100632616ADDBD700EDD9E3 /* NPTrayCell.xib */,
+				E100632716ADDBD700EDD9E3 /* NPTrayController.xib */,
+			);
+			path = Resources;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */

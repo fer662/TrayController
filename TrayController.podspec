@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   # Also allows the use of the FileList class like `source_files' does.
   #
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources = "Resources/*.nib"
 
   # A list of paths to preserve after installing the Pod.
   # CocoaPods cleans by default any file that is not used.
