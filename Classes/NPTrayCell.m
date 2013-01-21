@@ -25,4 +25,9 @@
     self.imageView.image = item.image;
 }
 
++ (CGFloat)heightForObject:(id)object
+{
+    return 70;
+}
+
 @end
